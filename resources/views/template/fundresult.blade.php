@@ -103,8 +103,7 @@
                             <td> {{ $qryshow[$i] }} </td>
                             <td> {{ $qrypay[$i] }} </td>
                             <td> {{ $qryrisk[$i] }} </td>
-                            <td> {{ $sumarysort[$i] }} </td>
-                            
+                            <td> {{ $sumarysort[$i] }} </td>                            
                         </tr>
                         @endfor
 

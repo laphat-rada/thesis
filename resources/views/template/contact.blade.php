@@ -4,24 +4,28 @@
 <div id="page-wrapper">
     <div class="well ">
         <div id="comments">
-            <h6>กรุณาลงชื่อเข้าใช้ เพื่อแสดงความคิดเห็น </h6>
+            <h6>ผู้จัดทำเว็บไซต์ </h6>
             <ul>
-                @for($i = 0 ; $i<$num;$i++)
+
                 <li>
                     <article>
                         <header>
-                            <address>
-                                By <a href="#">{{$qry[$i]->name}}</a>
-                            </address>
-                            <time datetime="2045-04-06T08:15+00:00">{{$qry[$i]->time}}</time>
-                        </header>
-                        <div class="comcont">
-                            <p>{{$qry[$i]->text}}</p>
+
+                            <p>นางสาวนารดา นาคเลื่อน </p>
+                            <p>ติดต่อได้ที่ 090-898-2098  Email : cath@hotmail.com</p>
                     </article>
                 </li>
-                @endfor
+                <li>
+                    <article>
+                        <header>
+
+                            <p>นางสาวลภัสรดา  วิเศษศรี </p>
+                            <p>ติดต่อได้ที่ 098-233-2132  Email : tichaws@gmail.com</p>
+                    </article>
+                </li>
+
             </ul>
-            
+
         </div>
     </div>
 </div>
@@ -29,25 +33,29 @@
 <div id="page-wrapper">
     <div class="well ">
         <div id="comments">
-            <h3>ความคิดเห็นของผู้ใช้งาน</h3>
+            <h6>ผู้จัดทำเว็บไซต์ </h6>
             <ul>
-                @for($i = 0 ; $i<$num;$i++)
+
                 <li>
                     <article>
                         <header>
-                            <address>
-                                By <a href="#">{{$qry[$i]->name}}</a>
-                            </address>
-                            <time datetime="2045-04-06T08:15+00:00">{{$qry[$i]->time}}</time>
-                        </header>
-                        <div class="comcont">
-                            <p>{{$qry[$i]->text}}</p>
+
+                            <p>นางสาวนารดา นาคเลื่อน </p>
+                            <p>ติดต่อได้ที่ 090-898-2098  Email : cath@hotmail.com</p>
                     </article>
                 </li>
-                @endfor
+                <li>
+                    <article>
+                        <header>
+
+                            <p>นางสาวลภัสรดา  วิเศษศรี </p>
+                            <p>ติดต่อได้ที่ 098-233-2132  Email : tichaws@gmail.com</p>
+                    </article>
+                </li>
+
             </ul>
-            
-            
+
+
             {{ Form::open(array('url' => '/comment', 'method' => 'GET'))}}
             {{ csrf_field() }}
             <div class="panel-body">
@@ -56,11 +64,11 @@
                     <textarea name="comment" id="comment" cols="25" rows="10"></textarea>
                 </div>
                 <div class="form-group">                   
-                        {{ Form::submit('ตกลง',['class'=>'btn btn-primary']) }}
-                        {{ Form::reset('รีเซ็ต',['class'=>'btn btn-primary']) }}            
+                    {{ Form::submit('ตกลง',['class'=>'btn btn-primary']) }}
+                    {{ Form::reset('รีเซ็ต',['class'=>'btn btn-primary']) }}            
                 </div>
             </div>           
-                {{ Form::close() }}
+            {{ Form::close() }}
         </div>
     </div>
 </div>

@@ -62,10 +62,35 @@ class RiskController extends Controller {
         
         if (Auth::guest()) {
             $save = "โปรดลงชื่อเข้าใช้เพื่อบันทึกข้อมูล";
-        } else {
-            
+        } 
+        elseif($num==1){
+            DB::table('save')->insert([                   
+                    ['nouser' =>  Auth::user()->id ,'no_1' => $namesort[$num-1]->shortfd]
+            ]);
+            $save = "บันทึกข้อมูลเรียบร้อยแล้ว";
+        }
+        elseif($num==2){
+            DB::table('save')->insert([                   
+                    ['nouser' =>  Auth::user()->id ,'no_1' => $namesort[$num-1]->shortfd,'no_2' => $namesort[$num-2]->shortfd]
+            ]);
+            $save = "บันทึกข้อมูลเรียบร้อยแล้ว";
+        }
+        elseif($num==3){
+            DB::table('save')->insert([                   
+                    ['nouser' =>  Auth::user()->id ,'no_1' => $namesort[$num-1]->shortfd,'no_2' => $namesort[$num-2]->shortfd,'no_3' => $namesort[$num-3]->shortfd]
+            ]);
+            $save = "บันทึกข้อมูลเรียบร้อยแล้ว";
+        }
+        elseif($num==4){
             DB::table('save')->insert([                   
                     ['nouser' =>  Auth::user()->id ,'no_1' => $namesort[$num-1]->shortfd,'no_2' => $namesort[$num-2]->shortfd,'no_3' => $namesort[$num-3]->shortfd,'no_4' => $namesort[$num-4]->shortfd]
+            ]);
+            $save = "บันทึกข้อมูลเรียบร้อยแล้ว";
+        }
+        else {
+            
+            DB::table('save')->insert([                   
+                    ['nouser' =>  Auth::user()->id ,'no_1' => $namesort[$num-1]->shortfd,'no_2' => $namesort[$num-2]->shortfd,'no_3' => $namesort[$num-3]->shortfd,'no_4' => $namesort[$num-4]->shortfd,'no_5' => $namesort[$num-5]->shortfd]
             ]);
             $save = "บันทึกข้อมูลเรียบร้อยแล้ว";
         }

@@ -4,7 +4,7 @@
 <div id="page-wrapper">
     <div class="well ">
         <div class="panel-heading" >
-            <h3 >เปรียบเทียบกองทุน โปรดเลือกกองทุนทั้ง 5 ทองทุน</h3>
+            <h3 >เปรียบเทียบกองทุน โปรดเลือกกองทุนทั้ง 5 กองทุน</h3>
         </div>
         <div class="panel-body form-horizontal">
 
@@ -50,7 +50,7 @@
                 <div class="form-group">
                     <label for="sel5" class="col-md-4 control-label"></label>
                     <div class="col-md-7">
-                        {{ Form::submit('Send',['class'=>'btn btn-success']) }}
+                        {{ Form::submit('ตกลง',['class'=>'btn btn-success']) }}
                     </div>
                 </div>
                 {{ Form::close() }}

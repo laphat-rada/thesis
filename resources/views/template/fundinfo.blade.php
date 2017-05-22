@@ -27,7 +27,7 @@
                 <div class="form-group">
                     <label for="sel5" class="col-md-4 control-label"></label>
                     <div class="col-md-7">
-                        {{ Form::submit('Send',['class'=>'btn btn-default']) }}
+                        {{ Form::submit('ตกลง',['class'=>'btn btn-default']) }}
                     </div>
                 </div>
                 {{ Form::close() }}

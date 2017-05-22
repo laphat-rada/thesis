@@ -19,6 +19,7 @@
             <div>ท่านได้คะแนนจากแบบประเมิน  {{$score}} คะแนน</div><div> {{$type[1]}} </div><br>
             <div class="table-responsive">
                 <label class="caption">ประเภทกองทุนที่เหมาะสม : {{$type[3]}} </label>
+                @if($num<5)
                 <table class="table">
                     <thead>
                         <tr>
@@ -31,8 +32,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                    @for($i = $num-1 ; $i>$num-5;$i--)
-                    
+                    @for($i = $num-1 ; $i>=0;$i--)                  
                     <tr class=" gradeX">
                         <th>{{$num-$i}}</th>
                         <td>{{$namesort[$i]->namefund}}</td>
@@ -46,6 +46,35 @@
                 </tbody>
                 
                 </table>
+                
+                @else
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ลำดับที่</th> 
+                            <th>ชื่อกองทุน</th>
+                            <th>ชื่อย่อ</th>
+                            <th>ค่าธรรมเนียม</th> 
+                            <th>ผลการดำเนินงานย้อนหลัง</th> 
+                            <th>คะแนน</th> 
+                        </tr>
+                    </thead>
+                    <tbody>
+                    @for($i = $num-1 ; $i>$num-6;$i--)                  
+                    <tr class=" gradeX">
+                        <th>{{$num-$i}}</th>
+                        <td>{{$namesort[$i]->namefund}}</td>
+                        <td>{{$namesort[$i]->shortfd}}</td>
+                        <td>{{$namesort[$i]->payment}}</td>
+                        <td>{{$nav[$i]}}</td>
+                        <td>{{$sumarysort[$i]}}</td>                       
+                        <td><a class="fa fa-files-o fa-fw " href="{{$namesort[$i]->link}}" target="_blank"></a></td>
+                    </tr>
+                    @endfor
+                </tbody>
+                
+                </table>
+                @endif
             </div>
             <!-- /.table-responsive -->
            

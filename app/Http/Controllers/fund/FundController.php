@@ -204,24 +204,24 @@ class FundController extends Controller {
 
         $qry = DB::table('fund')->where('idfund', $fund)->first();
         $risk = $qry->risk;
-        $payment = $qry->payment;
+        echo $qry->idfund;
 
         if ($risk == 1) {
-            return round((5 * 1000) / 9) * 0.158;
+            return round(((5 * 1000) / 9) * 0.158);
         } elseif ($risk == 2) {
-            return round((7 * 1000) / 9) * 0.158;
+            return round(((7 * 1000) / 9) * 0.158);
         } elseif ($risk == 3) {
-            return round((9 * 1000) / 9) * 0.158;
+            return round(((9 * 1000) / 9) * 0.158);
         } elseif ($risk == 4) {
-            return round((8 * 1000) / 9) * 0.158;
+            return round(((8 * 1000) / 9) * 0.158);
         } elseif ($risk == 5) {
-            return round((6 * 1000) / 9) * 0.158;
+            return round(((6 * 1000) / 9) * 0.158);
         } elseif ($risk == 6) {
-            return round((4 * 1000) / 9) * 0.158;
+            return round(((4 * 1000) / 9) * 0.158);
         } elseif ($risk == 7) {
-            return round((3 * 1000) / 9) * 0.158;
+            return round(((3 * 1000) / 9) * 0.158);
         } else {
-            return round((1 * 1000) / 9) * 0.158;
+            return round(((1 * 1000) / 9) * 0.158);
         }
     }
 
@@ -229,13 +229,13 @@ class FundController extends Controller {
         $qry = DB::table('fund')->where('idfund', $fund)->first();
         $payment = $qry->payment;
         if ($payment < 1.00) {
-            return round((9 * 1000) / 9) * 0.158;
+            return round(((9 * 1000) / 9) * 0.158);
         } elseif ($payment < 2.00) {
-            return round((7 * 1000) / 9) * 0.158;
+            return round(((7 * 1000) / 9) * 0.158);
         } elseif ($payment < 3.00) {
-            return round((1 * 1000) / 9) * 0.158;
+            return round(((1 * 1000) / 9) * 0.158);
         } else {
-            return round((0.5 * 1000) / 9) * 0.158;
+            return round(((0.5 * 1000) / 9) * 0.158);
         }
     }
 

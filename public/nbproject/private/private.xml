@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/blog1/resources/views/template/news4.blade.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/blog1/composer.json</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/blog1/resources/views/template/contact.blade.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/blog1/app/Http/Controllers/Admins/AdminController.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/blog1/resources/views/template/news2.blade.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/blog1/resources/views/template/newCreate.blade.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/blog1/resources/views/template/fundselect.blade.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/blog1/resources/views/admin/layouts/test.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/blog1/resources/views/admin/layouts/template.blade.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/blog1/resources/views/template/webpage.blade.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/blog1/app/Http/Controllers/fund/RiskController.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/blog1/resources/views/template/usercompain.blade.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/blog1/resources/views/template/calculateresult.blade.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/blog1/resources/views/template/fundresult.blade.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/blog1/routes/web.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/blog1/resources/views/template/webpage-calculate.blade.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/blog1/resources/views/template/fundinfo.blade.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/blog1/resources/views/template/showSave.blade.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/blog1/resources/views/template/webpage-slideleft.blade.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/blog1/resources/views/template/fundriskresult.blade.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/blog1/resources/views/template/news3.blade.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/blog1/resources/views/template/fund-risk.blade.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/blog1/resources/views/template/webpage-admin.blade.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/blog1/app/Http/Controllers/Admins/DashboardController.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/blog1/app/Http/Controllers/News/WebpageController.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/blog1/app/Http/Controllers/fund/FundController.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/blog1/resources/views/template/webpage-header.blade.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/blog1/resources/views/template/fundCreate.blade.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/blog1/resources/views/template/admin-slideleft.blade.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/blog1/config/app.php</file>
+        </group>
+    </open-files>
+</project-private>

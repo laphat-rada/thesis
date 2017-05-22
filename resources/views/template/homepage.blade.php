@@ -29,13 +29,33 @@ Licence URI: http://www.os-templates.com/template-terms
                         <li><i class="fa fa-user"></i> <a href="{{ url('/register') }}">ลงทะเบียน</a></li>
                         <li><i class="fa fa-sign-in"></i> <a href="{{ url('/login') }}">ลงชื่อเข้าใช้</a></li>
                     </ul>
+                    @elseif(Auth::user()->name == 'cath')
+                    <ul class="nospace inline pushright" >
+                        <li><i class="fa fa-user"></i> การจัดการ</li>
+                        <li><a href="{{url('/newscreate')}}">เพิ่มข่าว</a></li>
+                            <li><a href="{{url('/fundcreate')}}">เพิ่มกองทุน</a></li>
+                            <li><a href="{{url('/fundedit')}}">แก้ไขกองทุน</a></li>
+                            <li><a href="{{url('/usercompain')}}">รายงานปัญหา</a></li>
+                            <li>
+                                <a href="{{ url('/logout') }}"
+                                   onclick="event.preventDefault();
+                                       document.getElementById('logout-form').submit();">
+                                    ลงชื่อออก
+                                </a>
+
+                                <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                                    {{ csrf_field() }}
+                                </form>
+                            </li>
+                        
+                    </ul>
                     @else                        
                     <ul class="nospace inline pushright">
                         <li><i class="fa fa-user"></i> <a href="{{ url('/showSave') }}">ประวัติการทำรายการ</a></li>
                         <li>
                             <a href="{{ url('/logout') }}"
                                onclick="event.preventDefault();
-                                           document.getElementById('logout-form').submit();">
+                                       document.getElementById('logout-form').submit();">
                                 ลงชื่อออก
                             </a>
 

@@ -13,7 +13,13 @@ use Illuminate\Support\Facades\Auth;
 
 class WebpageController extends Controller {
 
-    public function getContract() {
+    public function getNewshow(){
+        $new = DB::table('news')->get();
+        $num = count($new);
+        return view('template.webpage',array('new' => $new,'num' => $num));
+    }
+
+        public function getContract() {
         return view('template.contract');
     }
 
@@ -22,7 +28,10 @@ class WebpageController extends Controller {
     }
 
     public function getNews() {
-        return view('template.news');
+        $id = Input::get('id');
+        $new = DB::table('news')->where('id_news',$id)->first();
+        $num = count($new);
+        return view('template.news',array('new' => $new,'num' => $num,'id'=>$id));
     }
 
     public function getNews2() {
