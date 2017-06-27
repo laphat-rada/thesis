@@ -50,7 +50,7 @@ Route::group(['namespace' => 'News'], function () {
     Route::get('/showbank', 'WebpageController@getBank');
     Route::get('/contact', 'ContactController@getShowCm');
     Route::get('/comment', 'ContactController@getComment');
-    Route::get('/home', 'WebpageController@getNewshow');
+    
 });
 
 
@@ -72,5 +72,5 @@ Route::get('check-connect', function() {
 
 
 Auth::routes();
-
+Route::get('/home', 'HomeController@index');
 

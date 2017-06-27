@@ -12,7 +12,7 @@
 
 
             <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                <label for="name" class="col-md-4 control-label">หัวข้อข่าว</label>
+                <label for="name" class="col-md-4 control-label">หัวข้อข่าว </label>
 
                 <div class="col-md-6">
                     <input id="type" type="text" class="form-control" name="name_topic" value="{{ old('name_album') }}" required autofocus>
@@ -28,10 +28,10 @@
 
 
             <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                <label for="name" class="col-md-4 control-label">เนื้อหาข่าว</label>
+                <label for="name" class="col-md-4 control-label">Url ข่าว </label>
 
                 <div class="col-md-6">
-                    <textarea id="name" type="tex" class="form-control" name="des_news" cols="50" rows="10" required autofocus></textarea>
+                    <input id="name" type="tex" class="form-control" name="des_news" cols="50" rows="10" required autofocus>
 
                     @if ($errors->has('name'))
                     <span class="help-block">

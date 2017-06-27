@@ -10,6 +10,7 @@
                 <th class="center">กองทุนลำดับที่ 2</th>
                 <th class="center">กองทุนลำดับที่ 3</th>
                 <th class="center">กองทุนลำดับที่ 4</th>
+                <th class="center">กองทุนลำดับที่ 5</th>
                 
                 
             </tr>
@@ -23,8 +24,7 @@
                 <td>{{$qry[$i]->No_2}}</td>
                 <td>{{$qry[$i]->No_3}}</td>
                 <td>{{$qry[$i]->No_4}}</td>
-                
-                
+                <td>{{$qry[$i]->No_5}}</td>              
             </tr>
             @endfor
             

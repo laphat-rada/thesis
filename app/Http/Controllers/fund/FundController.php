@@ -204,7 +204,7 @@ class FundController extends Controller {
 
         $qry = DB::table('fund')->where('idfund', $fund)->first();
         $risk = $qry->risk;
-        echo $qry->idfund;
+        
 
         if ($risk == 1) {
             return round(((5 * 1000) / 9) * 0.158);

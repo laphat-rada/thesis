@@ -24,7 +24,7 @@ class ContactController extends Controller {
     public function getShowCm() {       
         $qry = DB::table('contact')->get();
         $num = count($qry);
-        return view('template.Contact', array("qry" => $qry, "num" => $num));
+        return view('template.contact', array("qry" => $qry, "num" => $num));
     }
 
 }

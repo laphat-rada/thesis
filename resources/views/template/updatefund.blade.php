@@ -100,7 +100,7 @@
             </div>
         </div>
         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-            <label for="name" class="col-md-4 control-label">URL:หนังสือชี้ชวนฉบับย่อ</label>
+            <label for="name" class="col-md-4 control-label">Url หนังสือชี้ชวนฉบับย่อ</label>
 
             <div class="col-md-6">
                 <input id="type" type="text" class="form-control" name="url" value="{{ old('name_album') }}" placeholder="{{$fund->link}}" >

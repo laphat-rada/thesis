@@ -45,7 +45,7 @@ class AdminController extends Controller {
         DB::table('news')->insert(
                 ['topic_name'=>$topic,'description' => $descrip]
         );
-        return view('template.newcreate');
+        return view('template.newCreate');
     }
     public function getUsercompain() {
          
